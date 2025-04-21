@@ -1,0 +1,97 @@
+[
+  {
+    "rus": "Привет мир!",
+    "eng": "Hello World!",
+    "chi": "你好，世界！"
+  },
+  {
+    "rus": "Чем ты занимаешься?",
+    "eng": "What are you doing?",
+    "chi": "你在做什么？"
+  },
+  {
+    "rus": "Как тебя зовут?",
+    "eng": "What is your name?",
+    "chi": "你叫什么名字？"
+  },
+  {
+    "rus": "Привет, как ты?",
+    "eng": "Hello, how are you?",
+    "chi": "你好，你好吗？"
+  },
+  {
+    "rus": "Меня зовут Анна.",
+    "eng": "My name is Anna.",
+    "chi": "我叫安娜。"
+  },
+  {
+    "rus": "Я живу в большом городе.",
+    "eng": "I live in a big city.",
+    "chi": "我住在一个大城市。"
+  },
+  {
+    "rus": "Это мой друг.",
+    "eng": "This is my friend.",
+    "chi": "这是我的朋友。"
+  },
+  {
+    "rus": "Я люблю пить чай.",
+    "eng": "I like to drink tea.",
+    "chi": "我喜欢喝茶。"
+  },
+  {
+    "rus": "Сегодня светит солнце.",
+    "eng": "The sun is shining today.",
+    "chi": "今天阳光明媚。"
+  },
+  {
+    "rus": "У меня есть маленькая собака.",
+    "eng": "I have a small dog.",
+    "chi": "我有一只小狗。"
+  },
+  {
+    "rus": "Ты можешь мне помочь?",
+    "eng": "Can you help me?",
+    "chi": "你能帮我吗？"
+  },
+  {
+    "rus": "Где автобусная остановка?",
+    "eng": "Where is the bus stop?",
+    "chi": "公交车站在哪里？"
+  },
+  {
+    "rus": "Я хочу купить книгу.",
+    "eng": "I want to buy a book.",
+    "chi": "我想买一本书。"
+  },
+  {
+    "rus": "Она очень счастлива.",
+    "eng": "She is very happy.",
+    "chi": "她很开心。"
+  },
+  {
+    "rus": "Ты можешь мне помочь?",
+    "eng": "Can you help me?",
+    "chi": "你能帮我吗？"
+  },
+  {
+    "rus": "Мы ходим в школу каждый день.",
+    "eng": "We go to school every day.",
+    "chi": "我们每天去学校。"
+  },
+  {
+    "rus": "Это красивый дом.",
+    "eng": "It is a beautiful house.",
+    "chi": "这是一座漂亮的房子。"
+  },
+  {
+    "rus": "Я говорю по-английски.",
+    "eng": "I can speak English.",
+    "chi": "我会说英语。"
+  },
+  {
+    "rus": "До свидания! Увидимся скоро.",
+    "eng": "Goodbye! See you soon.",
+    "chi": "再见！很快见面。"
+  }
+]

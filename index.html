@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/ico" href="./img/favicon.ico">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Make a correct sentence</title>
+</head>
+
+<body>
+  
+  <header class="header">
+    
+    <label class="theme-changer-label" for="theme-changer-input">
+      <svg class="svg-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      </svg>
+
+      <svg class="svg-sun svg-none-display" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+          stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      </svg>
+      <div class="header">
+      <div class="language-container">
+      <select id="language-switcher">
+        <option value="eng" selected>English</option>
+        <option value="rus">Русский</option>
+        <option value="chi">中文</option>
+      </select>
+    </div>
+  </div>
+      
+      <input id="theme-changer-input" type="checkbox">
+    </label>
+  </header>
+  <main class="main">
+    <h1 class="h1">Make a correct sentence</h1>
+    <p class="main-task block">Переведите предложение</p>
+    <p class="task-sentence block">Нажмите Start, чтобы начать игру</p>
+    <p class="sub-task block">
+      Из данных слов составьте предложение с учетом прописных букв и знаков
+      препинания
+    </p>
+    <!-- <div class="words-field block">Нажмите Start, чтобы начать игру.</div> -->
+    <div class="words-field">
+      <!-- <p class="word">hello</p>
+      <p class="word ">world</p> -->
+    </div>
+
+    <div class="input-container">
+      <input id="input" class="disabled" type="text" placeholder="Введите текст..." autocomplete="off">
+
+      <svg class="reset-btn" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 16.8507L17 2.00003" stroke-width="3"/>
+        <path d="M2 2.14926L17 17" stroke-width="3"/>
+        </svg>
+    </div>
+    <p class="result block"></p>
+    <div class="btn-block">
+      <button id="start-btn">Start</button>
+      <button id="check-btn" class="disabled">Check</button>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="p-copyright">&copy; <span id="year"></span></p>
+    <a class="github-link" href="https://github.com/vsv-noon/make-a-correct-sentence" target="_blank">
+
+      <svg class="github-icon" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(1.8)"/>
+        </svg>
+    </a>
+
+  </footer>
+
+  <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>

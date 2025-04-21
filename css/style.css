@@ -1,0 +1,359 @@
+:root {
+  --background-light: #fff;
+  --background-dark: #354150;
+  --background-dark-div: #555050;
+  --background-body: grey;
+  --font-color-dark: #000;
+  --font-color-light: #fff;
+
+  /* New color theme swatches */
+  --graphic-design-1: #FF6347; /* Tomato */
+  --graphic-design-2: #4682B4; /* SteelBlue */
+  --graphic-design-3: #32CD32; /* LimeGreen */
+  --graphic-design-4: #FFD700; /* Gold */
+  --graphic-design-5: #8A2BE2; /* BlueViolet */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+body {
+  background-color: var(--background-body);
+}
+
+.header {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  background-color: var(--background-light);
+}
+
+.theme-changer-label {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.theme-changer-label .svg-moon {
+  width: 30px;
+  stroke: var(--graphic-design-1); /* Tomato */
+}
+
+.theme-changer-label:hover .svg-moon {
+  stroke: var(--graphic-design-2); /* SteelBlue */
+}
+
+.theme-changer-label .svg-sun {
+  width: 30px;
+  stroke: var(--graphic-design-3); /* LimeGreen */
+}
+
+.theme-changer-label:hover .svg-sun {
+  stroke: var(--graphic-design-4); /* Gold */
+}
+
+.svg-none-display {
+  display: none;
+}
+
+#theme-changer-input {
+  display: none;
+}
+
+.main {
+  max-width: 1024px;
+  height: 100%;
+  padding: 15px;
+  background-color: var(--background-light);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block {
+  max-width: 800px;
+  width: 100%;
+  background-color: #D9D9D9;
+  text-align: center;
+  border-radius: 12px;
+  line-height: 40px;  
+}
+
+.h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.main-task {
+  margin-bottom: 30px;
+}
+
+.task-sentence {
+  margin-bottom: 70px;
+}
+
+.sub-task {
+  margin-bottom: 31px;
+}
+
+.words-field {
+  width: 100%;
+  min-height: 40px;
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 45px;
+  row-gap: 15px;
+  margin-bottom: 20px;
+}
+
+.word {
+  height: 40px;
+  padding: 0 15px;
+  background-color: #D9D9D9;
+  text-align: center;
+  border-radius: 12px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#input {
+  position: relative;
+  width: 100%;
+  background-color: #D9D9D9;
+  text-align: center;
+  border-radius: 12px;
+  line-height: 40px;  
+  margin-bottom: 50px;
+  padding: 0 16px;
+  border: none;
+  text-align: left;
+}
+
+#input:focus {
+  outline: none;
+}
+
+.reset-btn {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  stroke: var(--graphic-design-1); /* Tomato */
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  stroke: var(--graphic-design-2); /* SteelBlue */
+}
+
+.result {
+  height: 40px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  background: transparent;
+}
+
+.result span {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--graphic-design-5); /* BlueViolet */
+}
+
+.btn-block {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+#start-btn,
+#check-btn {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+#start-btn {
+  background-color: var(--graphic-design-3); /* LimeGreen */
+}
+
+.dark-theme #start-btn {
+  background-color: #242f48;
+  color: var(--font-color-light)
+}
+
+#start-btn:hover {
+  color: #fff;
+  background-color: var(--graphic-design-2); /* SteelBlue */
+}
+
+.dark-theme #start-btn:hover {
+  color: #fff;
+  background-color: var(--graphic-design-4); /* Gold */
+}
+
+#start-btn:active {
+  background-color: #284824;
+}
+
+.dark-theme #start-btn:active {
+  color: var(--font-color-dark);
+  background-color: #69dbf8;
+}
+
+#check-btn {
+  background-color: var(--graphic-design-4); /* Gold */
+}
+
+.dark-theme #check-btn {
+  color: var(--font-color-light);
+  background-color: #5E4A2A;
+}
+
+#check-btn:hover {
+  color: #fff;
+  background-color: var(--graphic-design-2); /* SteelBlue */
+}
+
+#check-btn:active {
+  background-color: #5E4A2A;
+}
+
+.dark-theme #check-btn:active {
+  color: var(--font-color-dark);
+  background-color: var(--graphic-design-4); /* Gold */
+}
+
+.footer {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-light);
+}
+
+.dark-theme .p-copyright {
+  background-color: transparent;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+}
+
+.github-icon {
+  width: 30px;
+  height: 30px;
+  fill: #24292f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-theme .github-icon {
+  fill: var(--graphic-design-1); /* Tomato */
+}
+
+.github-icon:hover {
+  fill: var(--graphic-design-2); /* SteelBlue */
+}
+
+.dark-theme {
+  background-color: var(--background-dark);
+  color: var(--font-color-light);
+}
+
+.dark-theme p {
+  background-color: var(--background-dark-div);
+}
+
+.dark-theme .result {
+  background-color: transparent;
+}
+
+.language-container {
+  position: absolute; /* ключевое отличие */
+  top: 1rem;
+  right: -0.5rem;
+  z-index: 10; /* на всякий случай, чтобы не перекрыли */
+}
+
+.header {
+  position: relative; /* нужно, чтобы .language-container позиционировалась внутри header */
+}
+
+#language-switcher {
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: var(--graphic-design-1); /* Tomato */
+  color: #333;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Наведение */
+#language-switcher:hover {
+  border-color: #888;
+}
+
+/* Тёмная тема */
+@media (prefers-color-scheme: dark) {
+  #language-switcher {
+    background-color: #675a5a;
+    color: #f0f0f0;
+    border: 1px solid #274c6a;
+  }
+
+  #language-switcher:hover {
+    border-color: #666;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .btn-block {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  } */
+}
